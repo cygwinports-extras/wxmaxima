@@ -1,0 +1,12 @@
+--- origsrc/wxmaxima-14.12.1/configure.ac	2014-12-21 17:42:35.000000000 -0600
++++ src/wxmaxima-14.12.1/configure.ac	2015-03-17 16:35:55.290734000 -0500
+@@ -27,9 +27,6 @@ case "$host" in
+ 		AC_CHECK_TOOL(WINDRES, windres)
+                 win32=true
+                 ;;
+-        *cygwin*)
+-                win32=true
+-                ;;
+         *)
+                 win32=false
+ esac
