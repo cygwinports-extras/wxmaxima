@@ -1,0 +1,20 @@
+WX_VERSION=2.8
+inherit wxwidgets
+
+NAME="wxmaxima"
+VERSION=11.08.0
+RELEASE=1
+CATEGORY="Math"
+SUMMARY="Maxima GUI"
+DESCRIPTION="wxMaxima is a cross platform GUI for the computer algebra system
+Maxima based on wxWidgets."
+HOMEPAGE="http://wxmaxima.sourceforge.net/"
+SRC_URI="mirror://sourceforge/wxmaxima/wxMaxima-${VERSION}.tar.gz"
+SRC_DIR="wxMaxima-${VERSION}"
+PATCH_URI="0.7.5-cygwin.patch"
+
+REQUIRES="maxima"
+
+DIFF_EXCLUDES="Setup.h.in"
+DISTCLEANFILES="acinclude.m4"
+CYGCONF_ARGS="--enable-dnd --disable-printing --with-wx-config=${WX_CONFIG}"
