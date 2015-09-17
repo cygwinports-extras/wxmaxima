@@ -1,8 +1,8 @@
-WX_VERSION=2.8
+WX_VERSION=3.0
 inherit wxwidgets
 
 NAME="wxmaxima"
-VERSION=14.12.1
+VERSION=15.08.2
 RELEASE=1
 CATEGORY="Math"
 SUMMARY="Maxima GUI"
@@ -17,4 +17,4 @@ REQUIRES="maxima"
 
 DIFF_EXCLUDES="Setup.h.in"
 DISTCLEANFILES="acinclude.m4"
-CYGCONF_ARGS="--enable-dnd --disable-printing --with-wx-config=${WX_CONFIG}"
+CYGCONF_ARGS="--with-wx-config=${WX_CONFIG}"
